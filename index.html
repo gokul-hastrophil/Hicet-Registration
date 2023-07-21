@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student Information Form</title>
+    <style>
+        body {
+            background-color: yellow;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            transition: background 0.5s ease;
+        }
+        img{
+            height: 700px;
+            margin-right: 1cm;
+        }
+        h1 {
+            text-align: center;
+            color: #fff;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.5s ease;
+        }
+
+        form:hover {
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="https://www.hicet.ac.in/images/popup/Admission-2023-24-new.jpg" alt="Hicet">
+    <form action="https://formspree.io/f/myyqzpbe" method="POST">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="name">Student Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="register_number">HSC Register Number:</label>
+        <input type="text" id="register_number" name="register_number" required>
+
+        <label for="department">Department:</label>
+        <select id="department" name="department" required>
+            <option value="" disabled selected>Select Department</option>
+            <option value="Computer Science">Computer Science</option>
+            <option value="Electrical Engineering">Electrical Engineering</option>
+            <option value="Mechanical Engineering">Mechanical Engineering</option>
+            <option value="AIML">Artificial Intelligence and Machine Learning (AIML)</option>
+            <option value="ECE">Electronics and Communication Engineering (ECE)</option>
+            <option value="Food Tech">Food Technology</option>
+            <option value="Chemical">Chemical Engineering</option>
+            <option value="Biomedical">Biomedical Engineering</option>
+            <!-- Add more options as needed -->
+        </select>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
